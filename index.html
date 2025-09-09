@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Daisyui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+
+  <!-- main-section -->
+  <main class=" w-11/12">
+    <div class="flex ">
+      <!-- Left -Sidebar -->
+      <aside class=" bg-white p-4 shadow">
+        <h2 class="font-bold mb-4">Categories</h2>
+        <button class="btn bg-green-700  w-full text-black">All</button>
+        <div id="tree-level-container" class=" space-y-6">
+
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1  p-8">
+        <h1 class="text-2xl font-semibold text-center mb-6 text-green-800">Choose <span class="text-red-500">Your</span>
+          Trees</h1>
+
+        
+  <!-- loading spinner section -->
+        <section id="spinner" class="flex justify-center items-center p-5 hidden"><span class="loading loading-spinner text-error"></span></section>
+        <!-- All data section -->
+        <section id="tree-container" class="bg-gray-100 p-10 grid grid-cols-1 gap-5 lg:grid-cols-3">
+
+        </section>
+      
+        <section class="all-tree-container grid grid-cols-1 gap-6 lg:grid-cols-3">
+
+        </section>
+      </div>
+      <!-- Right side-Cart -->
+  </main>
+  <!-- Model uses-->
+  <dialog id="tree_modal" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box">
+      <div id="details-container" class="space-y-5"></div>
+
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+  <script src="./index.js"></script>
+</body>
+
+</html>
