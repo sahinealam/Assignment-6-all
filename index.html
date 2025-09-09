@@ -16,7 +16,60 @@
 </head>
 
 <body>
+  <header>
+    <div class="navbar bg-[#15803D] text-white shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 text-whiterounded-box z-1 mt-3 w-52 p-2 shadow">
+            
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">Green Earth</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>About</a></li>
+          <li><a>Gallery</a></li>
+          <li><a>Plant a Tree</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+       <button class="btn bg-[#FACC15] text-[#15803D] rounded-[999px]">Plant a Tree</button>
+      </div>
+    </div>
+  </header>
 
+  <!-- Banner Section -->
+ <section class=" bg-[#CFF0DC] relative flex items-center justify-center  px-4 text-center">
+    <!-- Left img -->
+    <img src="./assets/hero-leaf1.png" 
+         alt="Left Leaf"
+         class="hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 w-40 lg:w-52" />
+
+    <!-- Right img -->
+    <img src="./assets/hero-leaf2.png" 
+         alt="Right Leaf"
+         class="hidden lg:block absolute right-0 top-1/2 transform -translate-y-1/2 w-40 lg:w-52" />
+
+    <!-- Center Content -->
+    <div class=" space-y-4">
+      <h1 class="text-2xl md:text-4xl font-bold text-[#1F2937]">
+        Plant a Tree, Grow a Future
+      </h1>
+      <p class="font-semibold text-[#1F2937]">
+        Join our mission to plant 1 million trees and make the Earth greener for future generations.
+      </p>
+      <button class="bg-[#FACC15] hover:bg-yellow-500 text-[#15803D] font-semibold mb-4 px-6  py-2 rounded-full ">
+        Get Involved
+      </button>
+    </div>
+  </section>
   <!-- main-section -->
   <main class=" w-11/12">
     <div class="flex ">
@@ -34,14 +87,15 @@
         <h1 class="text-2xl font-semibold text-center mb-6 text-green-800">Choose <span class="text-red-500">Your</span>
           Trees</h1>
 
-        
-  <!-- loading spinner section -->
-        <section id="spinner" class="flex justify-center items-center p-5 hidden"><span class="loading loading-spinner text-error"></span></section>
+
+        <!-- loading spinner section -->
+        <section id="spinner" class="flex justify-center items-center p-5 hidden"><span
+            class="loading loading-spinner text-error"></span></section>
         <!-- All data section -->
         <section id="tree-container" class="bg-gray-100 p-10 grid grid-cols-1 gap-5 lg:grid-cols-3">
 
         </section>
-      
+
         <section class="all-tree-container grid grid-cols-1 gap-6 lg:grid-cols-3">
 
         </section>
